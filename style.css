@@ -1,0 +1,171 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#main{
+    display: grid;
+    grid-template-areas: 'div div' 'header1 header2' 'section1 section1' 'section2 aside' 'section3 section3' 'footer footer';
+    grid-template-columns: 50% 50%;
+}
+#linha{
+    grid-area: div;
+    background-color: #2DC878;
+    color: #2DC878;
+}
+#header1{
+    grid-area: header1;
+    background-image: url("./img/banner.png");
+    background-size: cover;
+    width: 100vw;
+    height: 610px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#header1 h1{
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 40pt;
+}
+#header1 p{
+    text-decoration: none;
+    font-size: 14,5pt;
+    font-family: Helvetica, sans-serif;
+}
+#header1 > div{
+    width: 50%;
+    padding: 10px;
+}
+#header1 div div{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+
+}
+#header1 div div div{
+    background-color: rgb(112, 112, 112);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px;
+}
+#header1 div div div:hover{ 
+    opacity: 1;
+    background-color: #2DC878;
+}
+#header2{
+    display: flex;
+    align-items: flex-end;
+}
+#section1{
+    grid-area: section1;
+    background-color: white;
+    display: flex;
+}
+#section1 div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 70px;
+}
+#section1 h3{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 13pt;
+    font-style: bold;
+}
+#section1 p{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 11pt;
+    color: #635f5f;
+}
+#section1 div img{
+    height: 50px;
+    width: 50px;
+    background-color: #2DC878;
+    border-radius: 50%;
+}
+#section2{
+    grid-area: section2;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    flex-direction: column;
+}
+#section2 input{
+    height: 30px;
+    width: 300px;
+    border-style: none;
+    border: 1px solid #777272;
+    text-align: justify;
+}
+#section2 input::placeholder{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#section2 button{
+
+}
+aside{
+    grid-area: aside;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#section3{
+    grid-area: section3;
+    background-color: white;
+}
+footer{
+    grid-area: footer;
+    background-color: #e3e3e3;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+footer a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #777272;
+    font-size: 11pt;
+    
+}
+
+
+
+
+
+
+
+
+
+@font-face{ 
+    font-family:'Font-Awesome';
+    src: url("./fonts/fontawesome-webfont.eot");
+    src: url("./fonts/fontawesome-webfont.woff") format(woff);
+    src: url("./fonts/fontawesome-webfont.ttf") format(ttf);
+    src: url("./fonts/fontawesome-webfont.svg") format(svg);
+}
+@font-face{ 
+    font-family:'Glyphicons';
+    src: url("./fonts/glyphicons-halflings-regular.eot");
+    src: url("./fonts/glyphicons-halflings-regular.ttf") format(ttf);
+    src: url("./fonts/glyphicons-halflings-regular.woff") format(woff);
+    src: url("./fonts/glyphicons-halflings-regular.svg") format(svg);
+}
